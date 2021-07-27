@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+</head>
+
+<body>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis possimus cumque ad. Fugiat
+        doloribus cumque laborum molestiae dolorum porro.
+    </p>
+    <button onclick="showhide()">show/hide</button>
+    <script>
+        function showhide() {
+            let a = document.getElementById("first");
+            if (a.style.display == 'none') {
+                a.style.display = 'block';
+            }
+            else {
+                a.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

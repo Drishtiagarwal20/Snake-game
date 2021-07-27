@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #detail {
+    border-collapse: collapse;
+    width: 30%;
+  }
+  td, th{
+    border: 1px solid black;
+    padding: 10px;
+  }
+</style>
+<body>
+  
+<table id="detail">
+  <tr>
+    <th>title</th>
+    <th>month</th>
+    <th>id</th>
+  </tr>
+  <tr onmouseover="ChangeBgColor(this)" onmouseout="BgColor(this)">
+    <td>meeting</td>
+    <td>Jan</td>
+    <td>266</td>
+  </tr>
+  <tr onmouseover="ChangeBgColor(this)" onmouseout="BgColor(this)">
+    <td>Zoom</td>
+    <td>Aug</td>
+    <td>45</td>
+  </tr>
+  <script>
+function ChangeBgColor(dash) { dash.style.backgroundColor = "yellow"; }
+function BgColor(dash) { dash.style.backgroundColor = "grey"; }
+</script>
+  </script>
+</body>
+</html>
